@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" th:href="@{/app.css}" />
 </head>
 <body>
-  Test Text!!
-    <br>
-    <p th:text="${String}"></p>
+    <a href="/playerturn">
+        <input type="button"
+           value="Click here to start!">
+    </a>
 </body>
 </html>

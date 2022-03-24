@@ -5,7 +5,7 @@ public class Space {
     private int taken;
 
     public Space() {
-        tile = "_";
+        tile = "E";
         taken = 0;
     }
 
@@ -13,12 +13,17 @@ public class Space {
         return tile;
     }
 
-    public void setTile(int play) {
-        taken = play;
-        if (play == 1)
-            tile = "X";
-        else
-            tile = "O";
+    public void setTile(int player) {
+        taken = player;
+        if (player == 1){
+            tile = "H";
+        } else if (player == 2){
+            tile = "C";
+        } else {
+            tile ="E";
+        }
+
+
     }
 
     public int getTaken() {

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/app.css}" />
+
+</head>
+<body>
+<div class="grid-board">
+    <div class="grid-item"><span th:class="${AA}"></span></div>
+    <div class="grid-item"><span th:class="${BA}"></span></div>
+    <div class="grid-item"><span th:class="${CA}"></span></div>
+    <div class="grid-item"><span th:class="${DA}"></span></div>
+    <div class="grid-item"><span th:class="${EA}"></span></div>
+    <div class="grid-item"><span th:class="${FA}"></span></div>
+    <div class="grid-item"><span th:class="${GA}"></span></div>
+    <div class="grid-item"><span th:class="${AB}"></span></div>
+    <div class="grid-item"><span th:class="${BB}"></span></div>
+    <div class="grid-item"><span th:class="${CB}"></span></div>
+    <div class="grid-item"><span th:class="${DB}"></span></div>
+    <div class="grid-item"><span th:class="${EB}"></span></div>
+    <div class="grid-item"><span th:class="${FB}"></span></div>
+    <div class="grid-item"><span th:class="${GB}"></span></div>
+    <div class="grid-item"><span th:class="${AC}"></span></div>
+    <div class="grid-item"><span th:class="${BC}"></span></div>
+    <div class="grid-item"><span th:class="${CC}"></span></div>
+    <div class="grid-item"><span th:class="${DC}"></span></div>
+    <div class="grid-item"><span th:class="${EC}"></span></div>
+    <div class="grid-item"><span th:class="${FC}"></span></div>
+    <div class="grid-item"><span th:class="${GC}"></span></div>
+    <div class="grid-item"><span th:class="${AD}"></span></div>
+    <div class="grid-item"><span th:class="${BD}"></span></div>
+    <div class="grid-item"><span th:class="${CD}"></span></div>
+    <div class="grid-item"><span th:class="${DD}"></span></div>
+    <div class="grid-item"><span th:class="${ED}"></span></div>
+    <div class="grid-item"><span th:class="${FD}"></span></div>
+    <div class="grid-item"><span th:class="${GD}"></span></div>
+    <div class="grid-item"><span th:class="${AE}"></span></div>
+    <div class="grid-item"><span th:class="${BE}"></span></div>
+    <div class="grid-item"><span th:class="${CE}"></span></div>
+    <div class="grid-item"><span th:class="${DE}"></span></div>
+    <div class="grid-item"><span th:class="${EE}"></span></div>
+    <div class="grid-item"><span th:class="${FE}"></span></div>
+    <div class="grid-item"><span th:class="${GE}"></span></div>
+    <div class="grid-item"><span th:class="${AF}"></span></div>
+    <div class="grid-item"><span th:class="${BF}"></span></div>
+    <div class="grid-item"><span th:class="${CF}"></span></div>
+    <div class="grid-item"><span th:class="${DF}"></span></div>
+    <div class="grid-item"><span th:class="${EF}"></span></div>
+    <div class="grid-item"><span th:class="${FF}"></span></div>
+    <div class="grid-item"><span th:class="${GF}"></span></div>
+    <div class="grid-item"><span th:class="${AG}"></span></div>
+    <div class="grid-item"><span th:class="${BG}"></span></div>
+    <div class="grid-item"><span th:class="${CG}"></span></div>
+    <div class="grid-item"><span th:class="${DG}"></span></div>
+    <div class="grid-item"><span th:class="${EG}"></span></div>
+    <div class="grid-item"><span th:class="${FG}"></span></div>
+    <div class="grid-item"><span th:class="${GG}"></span></div>
+
+
+</div>
+
+<div>
+    <div class="grid-buttons" th:hidden="!${hidden} OR ${isWinner}">
+        <a href="/computerturn/0">
+            <input type="button"
+                value="Column 1"></a>
+        <a href="/computerturn/1">
+            <input type="button"
+                   value="Column 2"></a>
+        <a href="/computerturn/2">
+            <input type="button"
+                   value="Column 3"></a>
+        <a href="/computerturn/3">
+            <input type="button"
+                   value="Column 4"></a>
+        <a href="/computerturn/4">
+            <input type="button"
+                   value="Column 5"></a>
+        <a href="/computerturn/5">
+            <input type="button"
+                   value="Column 6"></a>
+        <a href="/computerturn/6">
+            <input type="button"
+                   value="Column 7"></a>
+    </div>
+</div>
+
+
+<div th:hidden="${hidden}">
+    <p >The Board is full with no winner!!</p>
+    <a href="/">
+        <input type="button" value="Start a new game?">
+    </a>
+</div>
+
+<div th:hidden="!${isWinner}">
+    <p>There is a winner!</p>
+</div>
+
+
+
+
+</body>
+</html>

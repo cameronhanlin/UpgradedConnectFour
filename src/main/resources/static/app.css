@@ -1,0 +1,46 @@
+
+
+.grid-board {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    background-color: #2196F3;
+    padding: 5px;
+    width: 770px;
+}
+.grid-buttons {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    background-color: #2196F3;
+    padding: 5px;
+    width: 770px;
+    align-content: center;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 2px;
+    font-size: 3px;
+    text-align: center;
+}
+.E {
+    height: 95px;
+    width: 95px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+}
+.H {
+    height: 95px;
+    width: 95px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+}
+.C {
+    height: 95px;
+    width: 95px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+}
